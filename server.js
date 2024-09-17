@@ -20,8 +20,8 @@ app.use(cors());
 app.use(express.json());
 app.use('/tasks',taskRoutes);
 
-// app.listen(port, () => {
-//   console.log(`Server listening at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Server listening at http://localhost:${port}`);
+});
 
-module.exports = app;
+// module.exports = app;
